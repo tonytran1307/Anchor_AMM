@@ -1,0 +1,14 @@
+[programs.localnet]
+anchor_programs = "CEK6nMrUhNjUT2ki9eVskzwWRGLYdKTs7p77uNb5hVZt"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+# cluster = "https://api.devnet.solana.com"
+
+wallet = "/home/tony/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
