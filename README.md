@@ -16,7 +16,7 @@ Get the program ID:
 
 ```
 $ anchor keys list
-anchor_amm: 4CkSf34hTH2rGmgFDCm5WCFE8sHpfdBzrBChEScJBxoM
+anchor-amm = "CEK6nMrUhNjUT2ki9eVskzwWRGLYdKTs7p77uNb5hVZt"
 ```
 
 Here, make sure you update your program ID in `Anchor.toml` and `lib.rs`.
@@ -27,7 +27,7 @@ Build the program:
 $ anchor build
 ```
 
-Let's deploy the program. Notice that `anchor-amm` will be deployed on a [mainnet-fork](https://github.com/DappioWonderland/solana) test validator run by Dappio:
+Let's deploy the program. Notice that `anchor-amm` will be deployed on a  `devnet`:
 
 ```
 $ anchor deploy
@@ -42,5 +42,4 @@ Finally, run the test:
 
 ```
 $ anchor test --skip-build --skip-deploy
-```v
 
